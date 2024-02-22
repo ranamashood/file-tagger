@@ -1,6 +1,7 @@
-#include <iostream>
+#include "cli.hpp"
 
-int main() {
-  std::cout << "File Tagger";
+int main(int argc, char *argv[]) {
+  cli::parseArguments(argc, argv);
+
   return 0;
 }
